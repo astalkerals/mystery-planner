@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mystery-planner/static/css/main.ea6ea53b.css",
+    "main.js": "/mystery-planner/static/js/main.a4dfd61d.js",
+    "index.html": "/mystery-planner/index.html",
+    "main.ea6ea53b.css.map": "/mystery-planner/static/css/main.ea6ea53b.css.map",
+    "main.a4dfd61d.js.map": "/mystery-planner/static/js/main.a4dfd61d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea6ea53b.css",
+    "static/js/main.a4dfd61d.js"
+  ]
+}
