@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mystery-planner/static/css/main.ea6ea53b.css",
-    "main.js": "/mystery-planner/static/js/main.a4dfd61d.js",
+    "main.js": "/mystery-planner/static/js/main.2ce42317.js",
     "index.html": "/mystery-planner/index.html",
     "main.ea6ea53b.css.map": "/mystery-planner/static/css/main.ea6ea53b.css.map",
-    "main.a4dfd61d.js.map": "/mystery-planner/static/js/main.a4dfd61d.js.map"
+    "main.2ce42317.js.map": "/mystery-planner/static/js/main.2ce42317.js.map"
   },
   "entrypoints": [
     "static/css/main.ea6ea53b.css",
-    "static/js/main.a4dfd61d.js"
+    "static/js/main.2ce42317.js"
   ]
 }
