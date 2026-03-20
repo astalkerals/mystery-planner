@@ -1,0 +1,23 @@
+nav ul {
+    list-style: none;
+    background: var(--caption-background);
+    padding: 10px 25px;
+    border-radius: 30px;
+    width: 35%;
+    margin: auto;
+}
+
+nav li {
+    margin: 0 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--caption-text);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

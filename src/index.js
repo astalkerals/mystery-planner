@@ -5,6 +5,8 @@ import './index.css';
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Collection from "./pages/Collection";
+import Build from "./pages/Build";
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
         <Route path = "/" element = {<Layout />}>
           <Route index element={<Home />}/>
           <Route path="about" element={<About />} />
+          <Route path="collection" element={<Collection />} />
+          <Route path="build" element={<Build/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

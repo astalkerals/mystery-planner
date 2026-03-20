@@ -1,11 +1,18 @@
+import "../css/General.css"
 import "../css/Home.css";
+import GalleryNav from "../components/GalleryNav.jsx";
+import Review from "../components/Review.jsx";
+import FancyHeader from "../components/FancyHeader.jsx";
 
 const Home = () => {
     return (
-        <main id="home" className="main-content">
-            <h2>Home</h2>
-            <p>I will display on the home page</p>
-        </main>
+        <div id="full-page">
+            <main id="home" className="content">
+                <FancyHeader />
+                <GalleryNav />
+                <Review />
+            </main>
+        </div>
     );
 };
 

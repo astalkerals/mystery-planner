@@ -1,0 +1,31 @@
+#gallery2 section {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--caption-background);
+    color: var(--caption-text);
+    text-align: center;
+    margin: 10px;
+    max-height: 260px;
+    position:relative;
+    aspect-ratio: 6/4;
+}
+
+#gallery2 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+#gallery2{
+    width: 95%;
+    margin: auto;
+}
+
+#content a{
+    text-decoration: none;
+}
+
+#gallery2 p{
+    padding-top: 27%;
+    color:var(--caption-text);
+}

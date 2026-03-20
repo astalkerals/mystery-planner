@@ -1,10 +1,10 @@
 import "../css/Header.css";
 import Navigation from "./Navigation.jsx";
 
-const Header = () => {
+const Header = (page) => {
     return (
         <header id="main-header">
-            <h1>Finding A Home</h1>
+            <h1>{page.title}</h1>
             <Navigation />
         </header>
     );
