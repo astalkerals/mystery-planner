@@ -1,13 +1,32 @@
 {
   "files": {
-    "main.css": "/mystery-planner/static/css/main.ea6ea53b.css",
-    "main.js": "/mystery-planner/static/js/main.2ce42317.js",
+    "main.css": "/mystery-planner/static/css/main.0aa6178e.css",
+    "main.js": "/mystery-planner/static/js/main.7790e72e.js",
+    "static/media/ai-brony.png": "/mystery-planner/static/media/ai-brony.aa08cd317b5ad46a4ecf.png",
+    "static/media/ai-background-darker.png": "/mystery-planner/static/media/ai-background-darker.a6a2ca50fcb10f7a7396.png",
+    "static/media/snoop.png": "/mystery-planner/static/media/snoop.53ed4f039b131edcdb84.png",
+    "static/media/news.png": "/mystery-planner/static/media/news.1f953ac2dc79a0756165.png",
+    "static/media/brony.png": "/mystery-planner/static/media/brony.ab52a7b30af5cd79b3f7.png",
+    "static/media/vampiresnap.png": "/mystery-planner/static/media/vampiresnap.e8461c6475fb41b4d8d2.png",
+    "static/media/ai1920sparty.jpeg": "/mystery-planner/static/media/ai1920sparty.458802a4f98e65185405.jpeg",
+    "static/media/another-ai-murder-mystery.jpeg": "/mystery-planner/static/media/another-ai-murder-mystery.05178a2f02ff2b7cb62e.jpeg",
+    "static/media/ai-mystery-props.jpeg": "/mystery-planner/static/media/ai-mystery-props.adea2b39eefb305932e5.jpeg",
+    "static/media/ai-old-man.jpeg": "/mystery-planner/static/media/ai-old-man.480bd32cee9558da02de.jpeg",
+    "static/media/ai-detective.jpeg": "/mystery-planner/static/media/ai-detective.8c32f7ec7c5dc9785e55.jpeg",
+    "static/media/ai-hallway-portraits.jpeg": "/mystery-planner/static/media/ai-hallway-portraits.ec2bbece969457cc7814.jpeg",
+    "static/media/ai-holiday-party.jpg": "/mystery-planner/static/media/ai-holiday-party.ce506087dd2cca1322b1.jpg",
+    "static/media/fakehusbandevidence1.PNG": "/mystery-planner/static/media/fakehusbandevidence1.df16283668a19b8ac588.PNG",
+    "static/media/ai-dinner-party.jpg": "/mystery-planner/static/media/ai-dinner-party.e3cabc94aae8fdc9e991.jpg",
+    "static/media/ai-speakeasy.jpg": "/mystery-planner/static/media/ai-speakeasy.ad2cbbd791b7f3e10bf9.jpg",
+    "static/media/aielaine.jpg": "/mystery-planner/static/media/aielaine.3538bf2a638f330c64aa.jpg",
+    "static/media/ai-victorian.avif": "/mystery-planner/static/media/ai-victorian.9b7b20c078a5fe0df056.avif",
+    "static/media/aicarlise.avif": "/mystery-planner/static/media/aicarlise.b9dc2e314c7fa3da07b3.avif",
     "index.html": "/mystery-planner/index.html",
-    "main.ea6ea53b.css.map": "/mystery-planner/static/css/main.ea6ea53b.css.map",
-    "main.2ce42317.js.map": "/mystery-planner/static/js/main.2ce42317.js.map"
+    "main.0aa6178e.css.map": "/mystery-planner/static/css/main.0aa6178e.css.map",
+    "main.7790e72e.js.map": "/mystery-planner/static/js/main.7790e72e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea6ea53b.css",
-    "static/js/main.2ce42317.js"
+    "static/css/main.0aa6178e.css",
+    "static/js/main.7790e72e.js"
   ]
 }
