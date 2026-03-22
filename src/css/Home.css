@@ -19,42 +19,8 @@
     margin-bottom: 20px;
 }
 
-#gallery{
-    justify-content: center;
-    padding: 30px;
-}
-
-#gallery section {
-    width: 370px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: var(--caption-background);
-    color: var(--caption-text);
-    text-align: center;
-    margin: 20px;
-}
-
 body{
     background-image: url("../components/images/ai-background-darker.png");
-}
-
-#gallery img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    object-position: center top;
-}
-
-#gallery a{
-    text-decoration: none;
-    color: var(--caption-text);
-}
-
-.label {
-    padding-top: 0;
-    padding-bottom: 8px;
-    font-size: 18px;
-    font-weight: 600;
 }
 
 #intro {

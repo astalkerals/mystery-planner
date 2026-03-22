@@ -1,0 +1,56 @@
+:root{
+    --caption-text: #7a1f1f;
+    --background-edges: #370e0e;
+    --caption-background: #f4e9e9;
+}
+
+#basic-description{
+    text-align:left;
+    width: 95%;
+    padding: 10px 30px;
+    align-items:center;
+}
+
+#basic-description img{
+    width: 93%;
+}
+
+#basic-description h1{
+    padding-bottom: 0;
+}
+
+#basic-description p{
+    font-size: 110%;
+    text-align: left;
+    margin: 10px;
+}
+
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#contact-us{
+    background:var(--caption-background);
+    color:var(--caption-text);
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+#reach-us section{
+    width: 100%;
+    margin: 20px;
+}
+
+#reach-us iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#reach-us{
+    padding: 20px;
+}

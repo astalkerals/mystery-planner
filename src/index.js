@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Collection from "./pages/Collection";
 import Build from "./pages/Build";
+import BuildCrime from "./pages/BuildCrime";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="collection" element={<Collection />} />
           <Route path="build" element={<Build/>}/>
+          <Route path="buildCrime" element={<BuildCrime />}/>
         </Route>
       </Routes>
     </BrowserRouter>

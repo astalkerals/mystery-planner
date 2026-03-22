@@ -1,0 +1,21 @@
+#two-things section{
+    background: var(--caption-background);
+    min-height: 150px;
+    border-radius: 20px;
+    margin: 15px;
+    color: var(--caption-text);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#two-things{
+    width: 80%;
+    margin: auto;
+}
+
+#main-content h2{
+    text-align: center;
+    padding: 10px;
+}
