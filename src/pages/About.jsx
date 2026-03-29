@@ -3,6 +3,7 @@ import mystery from "../components/images/another-ai-murder-mystery.jpeg";
 import "../css/About.css";
 import Steps from "../components/Steps";
 import Map from "../components/Map";
+import ContactForm from "../components/ContactForm";
 
 const About = () => {
     return(
@@ -29,7 +30,7 @@ const About = () => {
                     <Map />
                 </section>
                 <section className="one" id="contact-us">
-                    <h2>Contact Form Goes Here</h2>
+                    <ContactForm />
                 </section>
             </div>
 

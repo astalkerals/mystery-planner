@@ -21,3 +21,27 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+#toggle-nav {
+    text-align: left;
+    color:var(--caption-background);
+}
+
+#main-nav .hide-small{
+    display: none;
+}
+
+@media (max-width: 500px){
+    #toggle-nav{
+        display: block;
+    }
+}
+
+@media (min-width: 768px){
+    #toggle-nav{
+        display: none;
+    }
+    #main-nav .hide-small{
+        display: flex;
+    }
+}

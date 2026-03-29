@@ -1,0 +1,40 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 12px;
+  align-items: center;
+  width: 80%;
+}
+
+.row label {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.row input,
+.row textarea {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.row textarea {
+  min-height: 100px;
+  resize: vertical;
+  transform: translateX(10px);
+}
+
+button{
+    padding: 4px;
+    margin: auto;
+    background: var(--caption-text);
+    color: var(--caption-background);
+    border: 1px solid var(--caption-background);
+}

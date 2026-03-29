@@ -3,6 +3,7 @@ import "../css/Home.css";
 import GalleryNav from "../components/GalleryNav.jsx";
 import Review from "../components/Review.jsx";
 import FancyHeader from "../components/FancyHeader.jsx";
+import Slideshow from "../components/Slideshow.jsx";
 
 const Home = () => {
     return (

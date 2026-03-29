@@ -1,23 +1,22 @@
-import brony from "./images/ai-brony.png";
-import carlise from "./images/aicarlise.avif";
-import elaine from "./images/aielaine.jpg";
 
-const Tone = () => {
+const Tone = ({imgSrc,label,setToneSelection}) => {
+    const clear = () => {
+        document.getElementById("placeholder-text").classList.add("hidden");
+    }
+
+    const select = (e) => {
+        clear();
+        document.querySelectorAll(".selectedT").forEach(el =>{
+            el.classList.remove("selectedT");
+        });
+        e.target.classList.add("selectedT");
+        setToneSelection("Tone: " + label);
+    }
     return(
-        <div id="gallery2-tone" className="columns">
-            <section className="one" id="different">
-                <img src={brony} alt="brony"/>
-                <div className="label">Entirely Silly</div>
-            </section>
-            <section className="one" id="bigger2">
-                <img src={carlise} alt="carlise"/>
-                <div className="label">Mixed</div>
-            </section>
-            <section className="one">
-                <img src={elaine} alt="elaine"/>
-                <div className="label">Serious</div>
-            </section>
-        </div>
+        <section className="one" onClick={select}>
+            <img src={imgSrc} alt=""/>
+            <div className="label">{label}</div>
+        </section>
     )
 }
 

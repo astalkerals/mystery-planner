@@ -10,19 +10,19 @@ const GalleryNav = () => {
             <section>
                 <Link to="/buildCrime">
                 <img src={party} alt="Determine plotlines"/>
-                <div class="label">Determine plotlines</div></Link>
+                <div className="label">Determine plotlines</div></Link>
             </section>
 
             <section>
                 <Link to="/buildCrime">
                 <img src={props} alt="Forge evidence"/>
-                <div class="label">Forge evidence</div></Link>
+                <div className="label">Forge evidence</div></Link>
             </section>
 
             <section>
                 <a href="#">
                 <img src={oldman} alt="Create characters"/>
-                <div class="label">Create characters</div></a>
+                <div className="label">Create characters</div></a>
             </section>
         </div>
     )

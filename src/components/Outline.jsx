@@ -1,9 +1,16 @@
-const Outline = () => {
+import "../css/Outline.css";
+
+const Outline = ({titleValue, themeSelection, toneSelection}) => {
     return(
         <div id="outline">
+            <h2>{titleValue}</h2>
             <h2>Outline:</h2>
-            <h3 id="guests"></h3>
-            <p id="advice">Begin answering the questions to create an outline.</p>
+            <p id="theme">{themeSelection}</p>
+            <p id="tone">{toneSelection}</p>
+            <p id="guests"></p>
+            <p id="advice"></p>
+            <p id="placeholder-text">Begin answering the questions to create an outline.</p>
+            
         </div> 
     )
     

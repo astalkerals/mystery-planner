@@ -13,9 +13,66 @@
 #two-things{
     width: 80%;
     margin: auto;
+    min-height: 200px;
 }
 
 #main-content h2{
     text-align: center;
     padding: 10px;
+}
+
+.hidden{
+    display:none;
+}
+
+#gallery1 section {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--caption-background);
+    color: var(--caption-text);
+    text-align: center;
+    margin: 10px;
+    max-height: 200px;
+    position:relative;
+    aspect-ratio: 4/3;
+}
+
+#gallery1 img{
+    width: 100%;
+}
+
+section .selected{
+    border: 3px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.selectedT{
+    border: 3px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#gallery2-tone{
+    width: 70%;
+    margin: auto;
+}
+
+#gallery2-tone section {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--caption-background);
+    color: var(--caption-text);
+    text-align: center;
+    margin: 10px;
+    max-height: 200px;
+    position:relative;
+    aspect-ratio: 4/4;
+}
+
+#gallery2-tone img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    
 }
