@@ -55,3 +55,14 @@ p{
 #reach-us{
     padding: 20px;
 }
+
+@media (max-width: 500px){
+    #about div{
+        justify-content: center;
+        margin: auto;
+    }
+    #about section{
+        margin: auto;
+        padding: 20px 0px;
+    }
+}

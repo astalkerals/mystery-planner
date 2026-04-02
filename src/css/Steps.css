@@ -11,3 +11,7 @@
 #explanation p{
     padding: 10px;
 }
+
+#explanation section{
+    margin: 20px;
+}

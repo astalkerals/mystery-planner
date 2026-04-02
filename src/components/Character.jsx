@@ -1,5 +1,5 @@
 import tempImg from "./images/ai-brony.png";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 /*<ul>
                 <li>Occuption: {char.occupation}</li>
                 <li>General Background: {char.generalBackground}</li>
@@ -9,6 +9,15 @@ import {useRef} from "react";
                 <li>Biggest Secret: {char.biggestSecret}</li>
             </ul> */
 const Character = (char) => {
+    const [showDialog, setShowDialog] = useState(false);
+
+    const openDialog = () => {
+        setShowDialog(true);
+    };
+
+    const closeDialog = () => {
+        setShowDialog(false);
+    };
 
     const descRef = useRef(null);
 
@@ -18,9 +27,10 @@ const Character = (char) => {
     }
 
     return(
-        <section className="one">
+        <>
+        <section className="one" onClick={openDialog}>
             <div className="imgCon">
-                <img src={tempImg} alt="james"/>
+                <img src={"https://hello-world-xxig.onrender.com/characters/" + char.imgsrc} alt="james"/>
             </div>
             <h3>{char.name}</h3>
             <ul id="small-desc">
@@ -34,7 +44,26 @@ const Character = (char) => {
                 <li>Biggest Secret: {char.biggestSecret}</li>
             </ul>
             <button id="btn-read" onClick= {readMore}>Read More</button>
+            {showDialog?(
+                <h1>hi</h1>
+            ):(
+                <h1>Bye</h1>
+            )}
         </section>
+        {showDialog?(
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    <p>Some text in the Modal..</p>
+                    </div>
+                </div>
+            </div> 
+        ):("")}
+        
+        </>
     )
 }
 
