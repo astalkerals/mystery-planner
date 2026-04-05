@@ -14,10 +14,12 @@ const Character = (char) => {
 
     const descRef = useRef(null);
 
+    /*<button id="btn-read" onClick= {readMore}>Read More</button>
+
     const readMore = (e) => {
         descRef.current.classList.toggle("hidden");
         (e.target.innerHTML === "Read More")? e.target.innerHTML = "Read Less" : e.target.innerHTML="Read More";
-    }
+    }*/
 
     return(
         <>
@@ -36,8 +38,6 @@ const Character = (char) => {
                 <li>Suspicious Attributes: {char.suspiciousAttributes}</li>
                 <li>Biggest Secret: {char.biggestSecret}</li>
             </ul>
-            <button id="btn-read" onClick= {readMore}>Read More</button>
-
         </section>
         {showDialog?(
             <div id="myModal" className={`modal ${showDialog ? "" : "hidden"}`}>
