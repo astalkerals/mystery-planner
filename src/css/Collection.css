@@ -11,8 +11,8 @@
     background: var(--caption-background);
     color: var(--caption-text);
     justify-content: center;
-    max-width: 30%;
-    margin: 20px;
+    max-width: 90%;
+    margin: 20px ;
     border-radius: 20px;
 }
 
@@ -54,6 +54,39 @@
     display: none;
 }
 
+.modal-content{
+    background: var(--caption-text);
+    position: relative;
+}
+
+.modal-content section{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+    margin: auto;
+    color: var(--caption-background);
+    justify-content: center;
+
+}
+
+.modal-content img{
+    width: 100%;
+    left: 5%;
+    align-self: center;
+    margin: auto;
+}
+
+.modal h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+}
+
 @media (min-width: 800px){
     .characters{
         display: flex;
@@ -62,11 +95,19 @@
     .characters section{
         min-width: 25%;
     }
+    .modal-content{
+        width:60%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 1400px){
     .characters section{
         min-width: 15%;
+    }
+    .modal-content{
+        width:40%;
+        margin: auto;
     }
 }
 

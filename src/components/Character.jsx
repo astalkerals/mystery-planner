@@ -1,4 +1,3 @@
-import tempImg from "./images/ai-brony.png";
 import "../css/Character.css";
 import {useRef, useState} from "react";
 
@@ -22,7 +21,7 @@ const Character = (char) => {
 
     return(
         <>
-        <section className="one" onClick= {showDialog? (openDialog) : (closeDialog)}>
+        <section className="one" onClick= {openDialog}>
             <div className="imgCon">
                 <img src={"https://hello-world-xxig.onrender.com/images/" + char.imgsrc} alt=""/>
             </div>
@@ -41,11 +40,26 @@ const Character = (char) => {
 
         </section>
         {showDialog?(
-            <div id="myModal" class="modal">
+            <div id="myModal" className={`modal ${showDialog ? "" : "hidden"}`}>
 
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                <div className="modal-content">
+                    
+                    <section>
+                        <span className="close" onClick = {closeDialog}>&times;</span>
+                        <img src={"https://hello-world-xxig.onrender.com/images/" + char.imgsrc} alt=""/>
+                    </section>
+                    <section>
+                        <h2>{char.name}</h2>
+                        <ul>
+                            <li>Occupation: {char.occupation}</li>
+                            <li>General Background: {char.generalBackground}</li>
+                            <li>Personality: {char.personality}</li>
+                            <li>Relation to Deceased: {char.relationToDeceased}</li>
+                            <li>Suspicious Attributes: {char.suspiciousAttributes}</li>
+                            <li>Biggest Secret: {char.biggestSecret}</li>
+                        </ul>
+                    </section>
+
                 </div>
 
             </div>

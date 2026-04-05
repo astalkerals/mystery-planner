@@ -3,6 +3,7 @@ import PhotoshopGallery from "../components/PhotoshopGallery";
 import Header from "../components/Header";
 import Characters from "../components/Characters";
 import "../css/Collection.css";
+import "../css/Character.css";
 
 const Collection = () => {
     return(
