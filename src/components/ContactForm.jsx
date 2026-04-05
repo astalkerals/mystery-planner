@@ -9,7 +9,7 @@ const ContactForm = () => {
     event.preventDefault();
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "03cc27bb-05a3-4bc7-b662-31d4d2f53965E");
+        formData.append("access_key", "03cc27bb-05a3-4bc7-b662-31d4d2f53965");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -25,7 +25,8 @@ const ContactForm = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-        console.log("Submitted", res);
+            console.log("Submitted", res);
+            setFeedback("Submitted!")
         }else {
             setFeedback("Error sending email");
         }
@@ -34,13 +35,13 @@ const ContactForm = () => {
     return (
         <form className="contact-form" onSubmit={onSubmit}>
             <div className = "row">
-            <label HTMLfor="name">Name: </label><input id="name" type="text" name="name"/>
+            <label htmlFor="name">Name: </label><input id="name" type="text" name="name"/>
             </div>
             <div className = "row">
-            <label HTMLfor="email">Email: </label><input type="email" name="email"/>
+            <label htmlFor="email">Email: </label><input type="email" name="email"/>
             </div>
             <div className = "row">
-            <label HTMLfor="message">Message: </label><textarea name="message" id="message"></textarea>
+            <label htmlFor="message">Message: </label><textarea name="message" id="message"></textarea>
             </div>
             <div></div>
             <button type="submit">Submit Form</button>

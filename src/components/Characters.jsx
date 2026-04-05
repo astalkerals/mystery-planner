@@ -28,7 +28,7 @@ const Characters = () => {
                     relationToDeceased={character.relationToDeceased} 
                     suspiciousAttributes={character.suspiciousAttributes}
                     biggestSecret={character.biggestSecret}
-                    imgSrc={character.imgsrc}/>
+                    imgsrc={character.imgsrc}/>
             ))}
         </div>
     )

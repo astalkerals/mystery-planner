@@ -37,13 +37,14 @@
 
 .imgCon img{
     width: 100%;
+    height: 260px;
     object-fit: cover;
     object-position: center top;
 }
 
 .imgCon{
     position: relative;
-    max-height: 280px;
+    height: 270px;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -58,7 +59,18 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .characters section{
+        min-width: 25%;
+    }
 }
+
+@media (min-width: 1400px){
+    .characters section{
+        min-width: 15%;
+    }
+}
+
+
 @media (max-width: 799px){
     .characters{
         display:block;
