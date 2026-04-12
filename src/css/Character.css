@@ -49,6 +49,27 @@
     margin: auto;
 }
 
+#character-dialogue-content p{
+    padding-top: 10px;
+}
+
+.modal-content{
+    min-width: 300px;
+}
+
+textarea{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input{
+    transform: translateX(5);
+}
+
+input, textarea{
+    width: 230px;
+}
+
 @media (min-width: 700px){
     .one{
         flex: 1;

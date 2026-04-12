@@ -3,6 +3,8 @@ import {useRef, useState} from "react";
 
 const Character = (char) => {
     const [showDialog, setShowDialog] = useState(false);
+    const renderImageLink = `https://hello-world-xxig.onrender.com/images/${char.imgsrc}`;
+    const localImageLink= `http://localhost:3002/images/${char.imgsrc}`;
 
     const openDialog = () => {
         setShowDialog(true);
@@ -25,7 +27,7 @@ const Character = (char) => {
         <>
         <section className="one" onClick= {openDialog}>
             <div className="imgCon">
-                <img src={"https://hello-world-xxig.onrender.com/images/" + char.imgsrc} alt=""/>
+                <img src={localImageLink} alt=""/>
             </div>
             <h3>{char.name}</h3>
             <ul id="small-desc">

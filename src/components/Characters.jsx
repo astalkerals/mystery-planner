@@ -1,16 +1,36 @@
 import Character from "./Character";
 import {useState, useEffect} from "react";
 import axios from "axios";
+import AddCharacter from "./AddCharacter";
+import "../css/Character.css";
 
 const Characters = () => {
+    const[showAddDialog,setShowAddDialog] = useState(false);
     const [characters, setCharacters] = useState([]);
+
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    };
+
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    };
+
+    const addCharacterToList = (char) => {
+        //adds the new character to the list of characters
+        setCharacters((characters) => [...characters,char]);
+    };
 
     //after the page has loaded
     useEffect(() => {
         const loadCharacters = async() => {
+            const urlRender = "https://hello-world-xxig.onrender.com/api/characters";
+            const urlLocal= "http://localhost:3002/api/characters";
             const response = await axios.get("https://hello-world-xxig.onrender.com/api/characters");
             setCharacters(response.data);
         };
+
+        
 
         loadCharacters();
 
@@ -18,7 +38,14 @@ const Characters = () => {
 
     return(
         <div className="characters">
+            <button id="btn-add" onClick={openAddDialog}>+</button>
+            {showAddDialog?(<AddCharacter 
+            closeAddDialog={closeAddDialog}
+            addCharacterToList={addCharacterToList}
+                />):("")}
+            
             {characters.map((character) => (
+
                 <Character 
                     key={character._id}
                     name={character.name}
@@ -29,6 +56,7 @@ const Characters = () => {
                     suspiciousAttributes={character.suspiciousAttributes}
                     biggestSecret={character.biggestSecret}
                     imgsrc={character.imgsrc}/>
+
             ))}
         </div>
     )
