@@ -76,13 +76,13 @@ const AddCharacter = (props) => {
                     <section>
                         <p id="img-prev-section">
                             {prevSrc===""?(""):(
-                                <img id="img-prev" name="cool-img" src={prevSrc} alt="your-image" />
+                                <img id="img-prev"  src={prevSrc} alt="your-image" />
                             )}
                         </p>
                         
                         <p>
                             <label htmlFor="img">Select Image</label>
-                            <input type="file" id="imgsrc" accept="images/*" onChange={uploadImage}></input>
+                            <input type="file" name="cool-img" id="imgsrc" accept="images/*" onChange={uploadImage}></input>
                         </p>
                     </section>
 
