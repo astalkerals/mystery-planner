@@ -28,7 +28,7 @@ const Character = (char) => {
         <>
         <section className="one" onClick= {openDialog}>
             <div className="imgCon">
-                <img src={localImageLink} alt=""/>
+                <img src={renderImageLink} alt=""/>
             </div>
             <h3>{char.name}</h3>
             <ul id="small-desc">
@@ -49,7 +49,7 @@ const Character = (char) => {
                     
                     <section>
                         <span className="close" onClick = {closeDialog}>&times;</span>
-                        <img src={localImageLink} alt=""/>
+                        <img src={char.newChar? (localImageLink) : (renderImageLink)} alt=""/>
                     </section>
                     <section>
                         <h2>{char.name}</h2>
