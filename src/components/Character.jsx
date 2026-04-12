@@ -49,7 +49,7 @@ const Character = (char) => {
                     
                     <section>
                         <span className="close" onClick = {closeDialog}>&times;</span>
-                        <img src={char.newChar? (localImageLink) : (renderImageLink)} alt=""/>
+                        <img src={renderImageLink} alt=""/>
                     </section>
                     <section>
                         <h2>{char.name}</h2>
