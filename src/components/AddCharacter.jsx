@@ -82,7 +82,7 @@ const AddCharacter = (props) => {
                         
                         <p>
                             <label htmlFor="img">Select Image</label>
-                            <input type="file" name="cool-img" id="imgsrc" accept="images/*" onChange={uploadImage}></input>
+                            <input type="file" name="img" id="imgsrc" accept="images/*" onChange={uploadImage}></input>
                         </p>
                     </section>
 
