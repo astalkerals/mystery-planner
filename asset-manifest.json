@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mystery-planner/static/css/main.c38c7b16.css",
-    "main.js": "/mystery-planner/static/js/main.93753cba.js",
+    "main.js": "/mystery-planner/static/js/main.608decfd.js",
     "static/media/ai-brony.png": "/mystery-planner/static/media/ai-brony.aa08cd317b5ad46a4ecf.png",
     "static/media/ai-background-darker.png": "/mystery-planner/static/media/ai-background-darker.a6a2ca50fcb10f7a7396.png",
     "static/media/snoop.png": "/mystery-planner/static/media/snoop.53ed4f039b131edcdb84.png",
@@ -27,10 +27,10 @@
     "static/media/aicarlise.avif": "/mystery-planner/static/media/aicarlise.b9dc2e314c7fa3da07b3.avif",
     "index.html": "/mystery-planner/index.html",
     "main.c38c7b16.css.map": "/mystery-planner/static/css/main.c38c7b16.css.map",
-    "main.93753cba.js.map": "/mystery-planner/static/js/main.93753cba.js.map"
+    "main.608decfd.js.map": "/mystery-planner/static/js/main.608decfd.js.map"
   },
   "entrypoints": [
     "static/css/main.c38c7b16.css",
-    "static/js/main.93753cba.js"
+    "static/js/main.608decfd.js"
   ]
 }
