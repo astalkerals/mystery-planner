@@ -8,6 +8,8 @@ const Characters = () => {
     const[showAddDialog,setShowAddDialog] = useState(false);
     const [characters, setCharacters] = useState([]);
 
+    const [newChar, setNewChar] = useState(false);
+
     const openAddDialog = () => {
         setShowAddDialog(true);
     };
@@ -37,16 +39,19 @@ const Characters = () => {
     }, []);
 
     return(
+    <>
+    <button id="btn-add" onClick={openAddDialog}>+</button>
         <div className="characters">
-            <button id="btn-add" onClick={openAddDialog}>+</button>
+            
             {showAddDialog?(<AddCharacter 
             closeAddDialog={closeAddDialog}
             addCharacterToList={addCharacterToList}
+            setNewChar = {setNewChar}
                 />):("")}
             
             {characters.map((character) => (
 
-                <Character 
+                <Character newChar = {newChar}
                     key={character._id}
                     name={character.name}
                     occupation={character.occupation}
@@ -59,6 +64,7 @@ const Characters = () => {
 
             ))}
         </div>
+        </>
     )
 }
 

@@ -5,6 +5,7 @@ const Character = (char) => {
     const [showDialog, setShowDialog] = useState(false);
     const renderImageLink = `https://hello-world-xxig.onrender.com/images/${char.imgsrc}`;
     const localImageLink= `http://localhost:3002/images/${char.imgsrc}`;
+    
 
     const openDialog = () => {
         setShowDialog(true);
@@ -48,7 +49,7 @@ const Character = (char) => {
                     
                     <section>
                         <span className="close" onClick = {closeDialog}>&times;</span>
-                        <img src={"https://hello-world-xxig.onrender.com/images/" + char.imgsrc} alt=""/>
+                        <img src={localImageLink} alt=""/>
                     </section>
                     <section>
                         <h2>{char.name}</h2>

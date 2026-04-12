@@ -12,6 +12,8 @@ const AddCharacter = (props) => {
         e.preventDefault();
         setResult("Sending...");
 
+        props.setNewChar(true);
+
         const formData = new FormData(e.target);
         console.log([...formData]);
 
@@ -35,11 +37,10 @@ const AddCharacter = (props) => {
     };
 
     return(
-    <div id="myModal" >
 
-        <div className="modal-content">
+        <div className="add-character-prompts">
             
-                <span className="close" onClick={props.closeAddDialog}>&times;</span>
+                <span className="close close-add" onClick={props.closeAddDialog}>&times;</span>
             <div id="character-dialogue-content">
                 <form onSubmit={addCharacterToServer}>
                     <h3>Create New Character</h3>
@@ -93,7 +94,6 @@ const AddCharacter = (props) => {
 
         </div>
 
-    </div>
         
     )
 

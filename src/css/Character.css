@@ -68,6 +68,36 @@ input{
 
 input, textarea{
     width: 230px;
+    border: 1px solid var(--caption-text);
+}
+
+.add-character-prompts{
+    background: var(--caption-background);
+    color: var(--caption-text);
+    margin: 10px 0;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+}
+
+.close-add{
+    color: var(--caption-text);
+}
+
+.add-character-prompts img{
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#btn-add{
+    background: transparent;
+    font-size: 200%;
+    position: relative;
+    top: 0;
+    padding: 0 10px;
 }
 
 @media (min-width: 700px){
