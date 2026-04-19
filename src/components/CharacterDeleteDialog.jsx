@@ -7,7 +7,7 @@ const CharacterDeleteDialog = (props) =>{
 
     const deleteCharacterPlan = async() => {
         setResult("Sending ...");
-        const response = await fetch(deleteUrlLocal + `/${props._id}`,
+        const response = await fetch(deleteUrlRender + `/${props._id}`,
         {
             method:"DELETE"
         }

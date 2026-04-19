@@ -55,7 +55,7 @@ const Character = (char) => {
         {showCharacter?(
         <section className="character" onClick={openDialog}>
             <div className="imgCon">
-                <img src={localImageLink} alt=""/>
+                <img src={renderImageLink} alt=""/>
             </div>
             <h3>{character.name}</h3>
             <ul id="small-desc">

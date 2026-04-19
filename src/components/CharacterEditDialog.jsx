@@ -18,7 +18,7 @@ const CharacterEditDialog = (props) =>{
         const formData = new FormData(event.target);
         console.log(...formData);
 
-        const response = await fetch(postURLLocal + `/${props._id}`,
+        const response = await fetch(postURLRender + `/${props._id}`,
         {
             method: "PUT",
             body: formData
