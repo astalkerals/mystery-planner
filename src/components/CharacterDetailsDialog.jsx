@@ -1,9 +1,13 @@
 const CharacterDetailsDialog = (char) =>{
+
+    const urlRender = "https://hello-world-xxig.onrender.com/api/characters/";
+    const urlLocal = "http://localhost:3002/api/characters/";
+
     return(
     <div className="modal-content">
             <div>
                 <span className="close" onClick = {char.closeDialog}>&times;</span>
-                <img src={char.localImageLink} alt=""/>
+                <img src={urlRender + char.imgsrc} alt=""/>
             </div>
             <div className="columns modal-name">
                 <h2>{char.name}</h2>
