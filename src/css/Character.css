@@ -1,7 +1,7 @@
 /* The Modal (background) */
 .modal {
   position: fixed; /* Stay in place */
-  z-index: 500000000; /* Sit on top */
+  z-index: 5; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -14,8 +14,7 @@
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  
   border: 1px solid #888;
   width: 75%; /* Could be more or less, depending on screen size */
 }
@@ -45,7 +44,6 @@
 
 .modal-content section{
     background: white;
-    width: 80%;
     margin: auto;
 }
 
@@ -78,6 +76,21 @@ input, textarea{
     position: relative;
 }
 
+.edit-box{
+    width: 30%;
+    margin: auto;
+    justify-content: center;
+}
+
+.edit-box textarea{
+    height: 100px;
+}
+
+.edit-box img{
+    max-width: 200px;
+    margin: auto;
+}
+
 .close{
     position: absolute;
     right: 20px;
@@ -90,6 +103,33 @@ input, textarea{
 .add-character-prompts img{
     max-height: 300px;
     max-width: 300px;
+}
+
+#delete-content{
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    background: var(--caption-text);
+    transform: translateY(200px);
+    border-radius: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#delete-content section{
+    background: transparent;
+    display: flex;
+    
+}
+
+#delete-content button{
+    margin: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    background: var(--caption-background);
+    color: var(--caption-text);
+    border-radius: 10px;
+    padding: 3px 6px;
 }
 
 #btn-add{

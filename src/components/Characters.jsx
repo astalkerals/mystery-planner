@@ -52,7 +52,10 @@ const Characters = () => {
             {characters.map((character) => (
 
                 <Character newChar = {newChar}
+                setCharacters = {setCharacters}
+                    characters = {characters}
                     key={character._id}
+                    _id={character._id}
                     name={character.name}
                     occupation={character.occupation}
                     generalBackground={character.generalBackground}
