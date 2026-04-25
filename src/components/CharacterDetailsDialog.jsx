@@ -1,7 +1,7 @@
 const CharacterDetailsDialog = (char) =>{
 
-    const urlRender = "https://hello-world-xxig.onrender.com/api/characters/";
-    const urlLocal = "http://localhost:3002/api/characters/";
+    const urlRender = "https://hello-world-xxig.onrender.com/images/";
+    const urlLocal = "http://localhost:3002/images/";
 
     return(
     <div className="modal-content">

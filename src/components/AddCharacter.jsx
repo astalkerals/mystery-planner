@@ -19,7 +19,7 @@ const AddCharacter = (props) => {
 
         const postUrlRender = "https://hello-world-xxig.onrender.com/api/characters";
         const postUrlLocal= "http://localhost:3002/api/characters";
-        const response = await fetch(postUrlLocal, {
+        const response = await fetch(postUrlRender, {
             "method" : "POST",
             "body" : formData
         });

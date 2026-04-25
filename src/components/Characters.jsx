@@ -7,6 +7,7 @@ import "../css/Character.css";
 const Characters = () => {
     const[showAddDialog,setShowAddDialog] = useState(false);
     const [characters, setCharacters] = useState([]);
+    
 
     const [newChar, setNewChar] = useState(false);
 
@@ -28,7 +29,7 @@ const Characters = () => {
         const loadCharacters = async() => {
             const urlRender = "https://hello-world-xxig.onrender.com/api/characters";
             const urlLocal= "http://localhost:3002/api/characters";
-            const response = await axios.get("https://hello-world-xxig.onrender.com/api/characters");
+            const response = await axios.get(urlRender);
             setCharacters(response.data);
         };
 
@@ -53,7 +54,6 @@ const Characters = () => {
 
                 <Character newChar = {newChar}
                 setCharacters = {setCharacters}
-                    characters = {characters}
                     key={character._id}
                     _id={character._id}
                     name={character.name}
@@ -64,6 +64,7 @@ const Characters = () => {
                     suspiciousAttributes={character.suspiciousAttributes}
                     biggestSecret={character.biggestSecret}
                     imgsrc={character.imgsrc}/>
+                    
 
             ))}
         </div>

@@ -70,7 +70,7 @@ const Character = (char) => {
                 {showContent==="details"?(
                     <CharacterDetailsDialog 
                         imgsrc = {character.imgsrc}
-                        renderImageLink = {renderImageLink}
+                        localImageLink = {renderImageLink}
                         showEdit = {showEdit}
                         showDelete = {showDelete}
                         closeDialog = {closeDialog}
